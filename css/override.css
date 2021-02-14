@@ -29,7 +29,6 @@
   background-image: url('../images/main_screen_900.png');
   background-size: contain;
   background-repeat: no-repeat;
-  width: 80%;
   height: 0;
   padding-top: 51.6%;
   /* (img-height / img-width * width) */
@@ -37,6 +36,7 @@
   margin: auto;
   margin-top: 40px;
   margin-bottom: 90px;  
+  width: 80%;
 }
 
 .hero-background-image:hover .floaters {
@@ -79,7 +79,11 @@
   width: 80%;
   margin: auto;
   background: #f3ede4;
-  border-radius: 28px;
+  border-radius: 18px;
+}
+
+.philosophy-contents {
+  padding: 20px 8% 40px 8%;
 }
 
 .quotes {
