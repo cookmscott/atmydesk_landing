@@ -35,10 +35,10 @@
     <link href="css/override.css" rel="stylesheet" media="all">
 
     <!--Favicons-->
-    <link rel="shortcut icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+
 </head>
 
 <body class="animsition">
@@ -243,7 +243,7 @@
                             <a class="nav-link" href="#features">Features</a>
                         </li>
                         <li class="nav-item">
-                            <div class="try-it-button">Try it out</div>
+                            <a class="try-it-button" href="https://app.mydesk.chat">Try it out</a>
                         </li>
                     </ul>
                 </div>
@@ -277,7 +277,7 @@
                         we aim to bring back informal catch ups and productive syncs for remote teams.
                     </p> -->
                     <p class="text-center type-gray-8 m-b-60">
-                    Safe, secure, water cooler conversations. Human connections in a stress-free environment. Seamlessly incorporated into your calendar
+                    Safe, secure, "swing by my desk" conversations. Human connections in a stress-free environment. Seamlessly incorporated into your calendar.
                     </p>
                 </div>
             </div>
@@ -296,6 +296,12 @@
             <div class="hero-background-image">
                 <div class="floaters">
                     <div class="image-float-1" data-tooltip-title="Top tooltip" data-tooltip-position="top">
+                        <div class="pulse-base pulse-circle"></div>
+                    </div>
+                    <div class="image-float-2" data-tooltip-title="Top tooltip" data-tooltip-position="top">
+                        <div class="pulse-base pulse-circle"></div>
+                    </div>
+                    <div class="image-float-3" data-tooltip-title="Top tooltip" data-tooltip-position="top">
                         <div class="pulse-base pulse-circle"></div>
                     </div>
                 </div>
@@ -449,8 +455,7 @@
     <!-- 5, 10, 15 minutes start -->
     <section class="section section-about-1 bg-gray-50 p-t-60 p-b-60">
         <div class="container">
-            <div class="row align-items-md-center">
-
+            <div class="row align-items-md-center flex-column-reverse flex-md-row">                       
                 <div class="col-md-6">
                     <div class="section-content-image">
                         <img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;"
@@ -464,7 +469,7 @@
                         or just to say hi.
                     </p>
                 </div>
-            </div>
+            </div>        
         </div>
     </section>
     <!-- 5, 10, 15 minutes end -->
@@ -1368,29 +1373,19 @@
     <!-- Footer start-->
     <footer class="section section-footer p-t-80 p-b-60">
         <div class="container">
-            <ul class="footer-menu-list h-list">
+            <ul class="footer-menu-list h-list">                
                 <li class="list-item">
-                    <a href="#">FEATURES</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">DOWNLOAD</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">BLOG</a>
-                </li>
-                <li class="list-item">
-                    <a href="#">ABOUT</a>
+                    <a href="#">DOCUMENTATION</a>
                 </li>
                 <li class="list-item">
                     <a href="#">PRIVACY POLICY</a>
                 </li>
             </ul>
             <p class="footer-text-copy">
-                <span>Built with</span>
-                <span class="fa fa-heart"></span>
-                <span>in New York</span>
+                <span>Connecting teams on a personal level </span>
+                <i class="fas fa-video"></i>              
             </p>
-            <p class="footer-text-copy">@ 2017 AuThemes. Get The Theme</p>
+            <p class="footer-text-copy">@2021 atmydesk</p>
         </div>
     </footer>
     <!-- Footer end-->
@@ -1429,11 +1424,22 @@
         // With the above scripts loaded, you can call `tippy()` with a CSS
         // selector and a `content` prop:
         tippy('.image-float-1', {
-            content: '<div style="display: table-cell;"><img style="float: left; padding-right: 8px;" src="images/woman_available_40.png" alt="#"><div style="margin-top: 2px;">I\'m atmydesk, call me!</div></div>',
+            content: '<div style="display: table-cell;"><img style="float: left; padding-right: 8px;" src="images/woman_available_40.png" alt="#"><div style="margin-top: 2px;">I\'m atmydesk, call me now!</div></div>',
             allowHTML: true,
-
             animation: 'shift-away-subtle',
         });
+        tippy('.image-float-2', {
+            content: '<div style="display: table-cell;">See everyone\'s availability for impromptu chats.</div>',
+            allowHTML: true,
+            maxWidth: 200,
+            animation: 'shift-away-subtle',
+        });    
+        tippy('.image-float-3', {
+            content: '<div style="display: table-cell;"><img style="float: left; padding-right: 8px;" src="images/man_upcoming_2_40.png" alt="#"><div style="margin-top: 2px;">I\'m free to chat at noon, cya then.</div></div>',
+            allowHTML: true,
+            maxWidth: 200,
+            animation: 'shift-away-subtle',
+        });                
     </script>
     <script>
         // Get size of hero image
